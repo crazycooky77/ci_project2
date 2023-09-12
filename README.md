@@ -38,7 +38,7 @@ This site is for anyone who loves Hangman and Halloween! The game randomly selec
 [View image (CTRL/CMD+Click for a new tab) by clicking here](https://github.com/crazycooky77/ci_project2/blob/hangman/assets/images/readme-game-over.png)
 
 - __Winner Winner Hangman's Dinner__ is the page the user is redirected to when they correctly guess the movie without hanging the hangman. They can start a new game from here as well.\
-[View image (CTRL/CMD+Click for a new tab) by clicking here](readme-winner.png)
+[View image (CTRL/CMD+Click for a new tab) by clicking here](https://github.com/crazycooky77/ci_project2/blob/hangman/assets/images/readme-winner.png)
 
 ## Testing 
 1. 
