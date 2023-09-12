@@ -2,7 +2,7 @@
 
 This site is for anyone who loves Hangman and Halloween! The game randomly selects a Halloween movie from a list and presents the user with blanks for each letter in the movie. The user selects letters from the alphabet provided, and the game will either fill in the blank, if the letter is in the movie name, or add a body part to the hangman! Once all body parts have been added to the hangman, the user loses. Once the user figures out the movie name (without killing the hangman), they win! Many more puzzle options can easily be added to the list, so the user can play as many times as they want, and hopefully not get bored long-term.
 
-<img src='assets/images/amiresponive.png' alt='Am I Responsive site image'/>
+<img src='assets/images/amiresponsive.png' alt='Am I Responsive site image'/>
 
 1. [User Stories](#user-stories)
 2. [Colour Palette](#colour-palette)
