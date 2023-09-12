@@ -95,24 +95,20 @@ h1 {
 #hangman-alphabet {
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	flex-direction: row;
-	margin-bottom: 50px;
+	margin-top: 25px;
+	padding-bottom: 50px;
 }
 
 /* Hangman image puzzle */
 #hangman-image {
 	transform: scale(0.8);
 	width: 45%;
-	display: block;
-	justify-content: center;
 }
 
 #hangman-image img {
-	margin-top: 25px;
-	padding-bottom: 50px;
 	max-width: 100%;
-	display: block;
+	align-self: self-start;
 }
 
 /* Alphabet for user selection */
@@ -126,9 +122,7 @@ h1 {
 }
 
 #alphabet img {
-	margin-top: 25px;
 	width: 75%;
-	padding-bottom: 50px;
 }
 
 #alphabet button {
@@ -154,19 +148,9 @@ h1 {
 		font-size: 24px;
 	}
 
-/* Change direction of site content from horizontal to vertical for smaller screens */
-	#hangman-alphabet {
-		flex-direction: column;
-	}
-
+/* Change the amount of letters per line for the alphabet */
 	#alphabet {
 		grid-template-columns: repeat(5, 1fr);
-	}
-
-/* Move the hangman image to the very bottom */
-	#hangman-image {
-		align-self: center;
-		order: 1;
 	}
 }
 
@@ -189,18 +173,16 @@ h1 {
 		font-size: 20px;
 	}
 
-/* Change direction of site content from horizontal to vertical for smaller screens */
-	#hangman-alphabet {
-		flex-direction: column;
-	}
-
+/* Change the amount of letters per line for the alphabet */
 	#alphabet {
 		grid-template-columns: repeat(4, 1fr);
 	}
+}
 
-/* Move the hangman image to the very bottom */
-	#hangman-image {
-		align-self: center;
-		order: 1;
+/* For screens 600px wide and less */
+@media screen and (max-width: 600px) {
+/* Change the amount of letters per line for the alphabet */
+	#alphabet {
+		grid-template-columns: repeat(3, 1fr);
 	}
 }
