@@ -108,6 +108,7 @@ h1 {
 
 #hangman-image img {
 	max-width: 100%;
+	width: 75%;
 	align-self: self-start;
 }
 
@@ -122,7 +123,7 @@ h1 {
 }
 
 #alphabet img {
-	width: 75%;
+	width: 50%;
 }
 
 #alphabet button {
@@ -132,7 +133,6 @@ h1 {
 
 
 /* Media Queries */
-
 /* For screens 1200px wide and less */
 @media screen and (max-width: 1200px) {
 /* Change size of text */
