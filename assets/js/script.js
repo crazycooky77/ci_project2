@@ -138,7 +138,7 @@ function letterSelection(event) {
 // If none remain, the user won, switch to the Congratulations screen
 				puzzleAreas.style.display = 'none';
 				wonGame.style.display = 'inherit';
-			}, 750);
+			}, 2000);
 		}
 // If the user clicks a letter that is not in the puzzle...
 	} else if (blankMatch.length === 0 && hangmanNr < 7 && blankPresent > 0) {
@@ -155,6 +155,6 @@ function letterSelection(event) {
 		setTimeout(() => {
 			puzzleAreas.style.display = 'none';
 			lostGame.style.display = 'inherit';
-		}, 750);
+		}, 2000);
 	}
 }
