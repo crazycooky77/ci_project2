@@ -20,9 +20,6 @@ This site is for anyone who loves Hangman and Halloween! The game randomly selec
 
 - As a user, I want to be able to easily start a new game when the previous one ends.
 
-## Colour Palette
-<img src='' alt='Website colour palette'/>
-
 ## Features 
 
 - __Background Image__ should show users that the site is Halloween-themed.\
