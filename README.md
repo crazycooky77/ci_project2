@@ -2,7 +2,7 @@
 
 This site is for anyone who loves Hangman and Halloween! The game randomly selects a Halloween movie from a list and presents the user with blanks for each letter in the movie. The user selects letters from the alphabet provided, and the game will either fill in the blank, if the letter is in the movie name, or add a body part to the hangman! Once all body parts have been added to the hangman, the user loses. Once the user figures out the movie name (without killing the hangman), they win! Many more puzzle options can easily be added to the list, so the user can play as many times as they want, and hopefully not get bored long-term.
 
-<img src='assets/images/amiresponsive.png' alt='Am I Responsive site image'/>
+<img src='assets/images/amiresponsive.webp' alt='Am I Responsive site image'/>
 
 1. [User Stories](#user-stories)
 2. [Colour Palette](#colour-palette)
@@ -23,22 +23,23 @@ This site is for anyone who loves Hangman and Halloween! The game randomly selec
 ## Features 
 
 - __Background Image__ should show users that the site is Halloween-themed.\
-[View image (CTRL/CMD+Click for a new tab) by clicking here](https://github.com/crazycooky77/ci_project2/blob/hangman/assets/images/logo.png)
+[View image (CTRL/CMD+Click for a new tab) by clicking here](https://github.com/crazycooky77/ci_project2/blob/hangman/assets/images/background.webp)
 
 - __New Game Page__ let's the user interact on first loading the page to start a new game when they're ready.\
-[View image (CTRL/CMD+Click for a new tab) by clicking here](https://github.com/crazycooky77/ci_project2/blob/hangman/assets/images/readme-new-game.png)
+[View image (CTRL/CMD+Click for a new tab) by clicking here](https://github.com/crazycooky77/ci_project2/blob/hangman/assets/images/readme-new-game.webp)
 
 - __Puzzle Page__ has instructions for the game, the blank puzzle area for the movie the user needs to guess, the hangman image to track incorrect letter selections, and the alphabet for the user to interact with to select a letter and keep track of what they already guessed.\
-[View image (CTRL/CMD+Click for a new tab) by clicking here](https://github.com/crazycooky77/ci_project2/blob/hangman/assets/images/readme-puzzle.png)
+[View image (CTRL/CMD+Click for a new tab) by clicking here](https://github.com/crazycooky77/ci_project2/blob/hangman/assets/images/readme-puzzle.webp)
 
 - __Game Over Page__ is used to redirect the user when they make too many incorrect guesses. They can start a new game from this page to try again.\
-[View image (CTRL/CMD+Click for a new tab) by clicking here](https://github.com/crazycooky77/ci_project2/blob/hangman/assets/images/readme-game-over.png)
+[View image (CTRL/CMD+Click for a new tab) by clicking here](https://github.com/crazycooky77/ci_project2/blob/hangman/assets/images/readme-game-over.webp)
 
 - __Winner Winner Hangman's Dinner__ is the page the user is redirected to when they correctly guess the movie without hanging the hangman. They can start a new game from here as well.\
-[View image (CTRL/CMD+Click for a new tab) by clicking here](https://github.com/crazycooky77/ci_project2/blob/hangman/assets/images/readme-winner.png)
+[View image (CTRL/CMD+Click for a new tab) by clicking here](https://github.com/crazycooky77/ci_project2/blob/hangman/assets/images/readme-winner.webp)
 
 ## Testing 
-1. 
+1. Used Wave on each page and corrected missing alt tags where needed
+2. 
 
 ### Validator Testing 
 
@@ -58,7 +59,7 @@ The website was checked using Lighthouse and...
 
 
 #### Wave
-
+Wave does not show show errors on any of the pages. It does display an alert for a possible heading, however the text is in paragraph tags, and stylistically, the font size is as expected.
 
 ## Deployment
 
@@ -104,4 +105,4 @@ Terminal:
 ### Wireframes
 
 I created a basic wireframe to plan out the layout for the website. 
-<img src='assets/images/readme-wireframe.png' alt='Wireframe image'/>
+<img src='assets/images/readme-wireframe.webp' alt='Wireframe image'/>
