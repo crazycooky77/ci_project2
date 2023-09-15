@@ -68,9 +68,6 @@ function blankPuzzle() {
     	alphaLetter.style.cursor = 'pointer';
     }
 
-// TESTING
-	console.log(randomMovie);
-
 /** Count the number of words in the movie name to create separate divs
  */
 	for (let word = 0; word < words.length; word++) {
