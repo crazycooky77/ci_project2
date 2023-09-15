@@ -18,7 +18,7 @@ html {
 /* Background image */
 body {
 	font-size: 20px;
-	background: url('../images/logo.png') no-repeat;
+	background: url('../images/background.webp') no-repeat;
 	background-size: cover;
 	min-height: 100vh;
 }

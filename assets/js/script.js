@@ -53,7 +53,7 @@ function blankPuzzle() {
 /** Replace the hangman image with the blank/starting image
  */
     let hangman = document.getElementById('hangman-image').getElementsByTagName('img')[0];
-    hangman.src = 'assets/images/hangman-1.png'
+    hangman.src = 'assets/images/hangman-1.webp'
     hangman.alt = 'Hangman image showing how many wrong letters were selected'
 
 /** Replace the selected alphabet images, styling, and functions with blank alphabet defaults
@@ -62,7 +62,7 @@ function blankPuzzle() {
     for (let alphaButtons = 0; alphaButtons < alphabet.length; alphaButtons++) {
     	let alphabetClass = alphabet[alphaButtons].classList[0];
     	let alphaLetter = document.getElementById('alphabet').getElementsByTagName('img')[alphaButtons];
-    	alphaLetter.src = 'assets/images/' + alphabetClass + '.png';
+    	alphaLetter.src = 'assets/images/' + alphabetClass + '.webp';
     	alphaLetter.alt = 'Letter ' + alphabetClass
     	alphabet[alphaButtons].disabled = false;
     	alphaLetter.style.cursor = 'pointer';
@@ -82,7 +82,7 @@ function blankPuzzle() {
  */
 	  	for (let letter = 0; letter < words[word].length; letter++) {
 	 		let blank = document.createElement('img');
-	 		blank.src = 'assets/images/blank.png';
+	 		blank.src = 'assets/images/blank.webp';
 	 		blank.alt = 'Blank letter placeholder'
 	 		blank.classList.add(words[word][letter].toLowerCase());
 	 		blank.classList.add('blank');
@@ -125,7 +125,7 @@ function letterSelection(event) {
  */
 	function clickActions() {
 		clickedButton.disabled = true;
-		let letterStrikethrough = clickedAlphabet[0].src = 'assets/images/' + clickedLetter + '-selected.png';
+		let letterStrikethrough = clickedAlphabet[0].src = 'assets/images/' + clickedLetter + '-selected.webp';
 		let letterStrikeAlt = clickedAlphabet[0].alt = 'Selected letter ' + clickedLetter.toUpperCase();
 		clickedAlphabet[0].style.cursor = 'default';
 	}
@@ -155,7 +155,7 @@ function letterSelection(event) {
 /** Replace all relevant blank puzzle letters with the selected alphabet letter
  */
 		for (let match = 0; match < blankMatch.length; match++) {
-			let replaceLetter = blankMatch[match].src = 'assets/images/' + clickedLetter + '.png';
+			let replaceLetter = blankMatch[match].src = 'assets/images/' + clickedLetter + '.webp';
 			blankMatch[match].classList.remove('blank');			
 		}
 /** Check if any blanks remain in the puzzle
@@ -177,7 +177,7 @@ function letterSelection(event) {
 		clickActions();
 /** Replace the hangman image for every wrong answer
  */
-		let hangmanHung = hangman[0].src = hangmanSrc + (hangmanNr + 1) + '.png';
+		let hangmanHung = hangman[0].src = hangmanSrc + (hangmanNr + 1) + '.webp';
 /** If the user clicks a letter that is not in the puzzle and it's their last chance...
  */
 	} else if (blankMatch.length === 0 && hangmanNr === 7 && blankPresent > 0) {
@@ -186,7 +186,7 @@ function letterSelection(event) {
 		clickActions();
 /** Replace the hangman image for the wrong answer and switch to the Game Over screen
  */
-		let hangmanHung = hangman[0].src = hangmanSrc + (hangmanNr + 1) + '.png';
+		let hangmanHung = hangman[0].src = hangmanSrc + (hangmanNr + 1) + '.webp';
 		setTimeout(() => {
 			puzzleAreas.style.display = 'none';
 			lostGame.style.display = 'inherit';
