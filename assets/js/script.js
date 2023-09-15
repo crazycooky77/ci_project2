@@ -83,7 +83,7 @@ function blankPuzzle() {
 	  	for (let letter = 0; letter < words[word].length; letter++) {
 	 		let blank = document.createElement('img');
 	 		blank.src = 'assets/images/blank.png';
-	 		blank.add = 'Blank letter placeholder'
+	 		blank.alt = 'Blank letter placeholder'
 	 		blank.classList.add(words[word][letter].toLowerCase());
 	 		blank.classList.add('blank');
 	      puzzleWord.appendChild(blank);
@@ -126,7 +126,7 @@ function letterSelection(event) {
 	function clickActions() {
 		clickedButton.disabled = true;
 		let letterStrikethrough = clickedAlphabet[0].src = 'assets/images/' + clickedLetter + '-selected.png';
-		let letterStrikeAlt = clickedAlphabet[0].alt = 'Selected letter' + clickedLetter;
+		let letterStrikeAlt = clickedAlphabet[0].alt = 'Selected letter ' + clickedLetter.toUpperCase();
 		clickedAlphabet[0].style.cursor = 'default';
 	}
 
