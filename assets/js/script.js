@@ -1,38 +1,40 @@
 /** List of movies for the puzzle
  */
-const movies = ['Rocky Horror Picture Show',
-'Hocus Pocus',
-'Scream',
-'The Addams Family',
-'The Omen',
-'Rosemarys Baby',
-'A Nightmare on Elm Street',
-'The Haunted Mansion',
-'The Shining',
-'Halloweentown',
-'Childs Play',
-'Beetlejuice',
-'The Exorcist',
-'Carrie',
-'The Craft',
-'Paranormal Activity',
-'Practical Magic',
-'The Nightmare Before Christmas',
-'The Witches of Eastwick',
-'The Ring',
-'Death Becomes Her',
-'Sleepy Hollow',
-'Dracula',
-'Psycho',
-'Interview with a Vampire',
-'The Witches']
+const movies = [
+	'Rocky Horror Picture Show',
+	'Hocus Pocus',
+	'Scream',
+	'The Addams Family',
+	'The Omen',
+	'Rosemarys Baby',
+	'A Nightmare on Elm Street',
+	'The Haunted Mansion',
+	'The Shining',
+	'Halloweentown',
+	'Childs Play',
+	'Beetlejuice',
+	'The Exorcist',
+	'Carrie',
+	'The Craft',
+	'Paranormal Activity',
+	'Practical Magic',
+	'The Nightmare Before Christmas',
+	'The Witches of Eastwick',
+	'The Ring',
+	'Death Becomes Her',
+	'Sleepy Hollow',
+	'Dracula',
+	'Psycho',
+	'Interview with a Vampire',
+	'The Witches'
+]
 
 /** Variables for hiding/displaying sections on-clicks
  */
-	let newGame = document.getElementById('new-game');
-	let wonGame = document.getElementById('won-game');
-	let lostGame = document.getElementById('lost-game');
-	let puzzleAreas = document.getElementById('puzzle-areas');
+let newGame = document.getElementById('new-game');
+let wonGame = document.getElementById('won-game');
+let lostGame = document.getElementById('lost-game');
+let puzzleAreas = document.getElementById('puzzle-areas');
 
 function blankPuzzle() {
 /** Set necessary variables for movie name and length
@@ -81,7 +83,7 @@ function blankPuzzle() {
 	 		blank.src = 'assets/images/blank.png';
 	 		blank.classList.add(words[word][letter].toLowerCase());
 	 		blank.classList.add('blank');
-	        puzzleWord.appendChild(blank);
+	      puzzleWord.appendChild(blank);
 		}
 	}
 
