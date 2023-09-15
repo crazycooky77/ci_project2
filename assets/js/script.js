@@ -54,6 +54,7 @@ function blankPuzzle() {
  */
     let hangman = document.getElementById('hangman-image').getElementsByTagName('img')[0];
     hangman.src = 'assets/images/hangman-1.png'
+    hangman.alt = 'Hangman image showing how many wrong letters were selected'
 
 /** Replace the selected alphabet images, styling, and functions with blank alphabet defaults
  */
@@ -62,6 +63,7 @@ function blankPuzzle() {
     	let alphabetClass = alphabet[alphaButtons].classList[0];
     	let alphaLetter = document.getElementById('alphabet').getElementsByTagName('img')[alphaButtons];
     	alphaLetter.src = 'assets/images/' + alphabetClass + '.png';
+    	alphaLetter.alt = 'Unselected alphabet letter image'
     	alphabet[alphaButtons].disabled = false;
     	alphaLetter.style.cursor = 'pointer';
     }
@@ -81,6 +83,7 @@ function blankPuzzle() {
 	  	for (let letter = 0; letter < words[word].length; letter++) {
 	 		let blank = document.createElement('img');
 	 		blank.src = 'assets/images/blank.png';
+	 		blank.add = 'Blank letter placeholder'
 	 		blank.classList.add(words[word][letter].toLowerCase());
 	 		blank.classList.add('blank');
 	      puzzleWord.appendChild(blank);
