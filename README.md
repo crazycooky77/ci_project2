@@ -5,12 +5,11 @@ This site is for anyone who loves Hangman and Halloween! The game randomly selec
 <img src='assets/images/amiresponsive.webp' alt='Am I Responsive site image'/>
 
 1. [User Stories](#user-stories)
-2. [Colour Palette](#colour-palette)
-3. [Features](#features)
-4. [Testing](#testing)
-5. [Deployment](#deployment)
-6. [Credits](#credits)
-7. [Media](#media)
+2. [Features](#features)
+3. [Testing](#testing)
+4. [Deployment](#deployment)
+5. [Credits](#credits)
+6. [Media](#media)
 
 ## User Stories
 
