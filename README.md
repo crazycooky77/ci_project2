@@ -40,16 +40,23 @@ This site is for anyone who loves Hangman and Halloween! The game randomly selec
 ## Testing 
 1. Used Wave on each page and corrected missing alt tags where needed
 2. Tested the site with Lighthouse and replaced all .png images with .webp
+3. Full site functionality was tested on a MacBook, iPad, iPhone, and Pixel 6
+	3a. New Game page and button
+	3b. Lost Game page and New Game button
+	3c. Won Game page and New Game button
+	3d. Puzzle Page with all alphabet letters and new/lost games
+4. HTML Checker identified an unclosed element > resolved
+5. W3C Validator identified no issues to resolve
 
 ### Validator Testing 
 
 #### HTML Checker
-The page was checked using the HTML Checker. !! Some issues were identified as described in Testing. All were resolved until no further errors were identified for any of the pages, as evidenced [here](...) and in the image below.
-<img src='' alt='HTML Checker result'/>
+The page was checked using the HTML Checker. Identified errors and warnings were resolved. No other errors/warnings remain.
+<img src='assets/images/readme-html.webp' alt='HTML Checker result'/>
 
 #### W3C
-All pages were checked using [the Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/#validate_by_uri) and !! no errors were found as evidenced on [this page](...) and via the image below.
-<img src='...' alt='W3C Validator result'/>
+All pages were checked using [the Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/#validate_by_uri) and no errors were found as evidenced on [this page](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcrazycooky77.github.io%2Fci_project2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) and via the image below.
+<img src='assets/images/readme-jigsaw.webp' alt='W3C Validator result'/>
 
 #### Lighthouse
 The website was checked using Lighthouse and 100 was scored in all areas.
