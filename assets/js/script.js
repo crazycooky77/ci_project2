@@ -27,7 +27,7 @@ const movies = [
 	'Psycho',
 	'Interview with a Vampire',
 	'The Witches'
-]
+];
 
 /** Variables for hiding/displaying sections on-clicks
  */
@@ -53,8 +53,8 @@ function blankPuzzle() {
 /** Replace the hangman image with the blank/starting image
  */
     let hangman = document.getElementById('hangman-image').getElementsByTagName('img')[0];
-    hangman.src = 'assets/images/hangman-1.webp'
-    hangman.alt = 'Hangman image showing how many wrong letters were selected'
+    hangman.src = 'assets/images/hangman-1.webp';
+    hangman.alt = 'Hangman image showing how many wrong letters were selected';
 
 /** Replace the selected alphabet images, styling, and functions with blank alphabet defaults
  */
@@ -63,7 +63,7 @@ function blankPuzzle() {
     	let alphabetClass = alphabet[alphaButtons].classList[0];
     	let alphaLetter = document.getElementById('alphabet').getElementsByTagName('img')[alphaButtons];
     	alphaLetter.src = 'assets/images/' + alphabetClass + '.webp';
-    	alphaLetter.alt = 'Letter ' + alphabetClass
+    	alphaLetter.alt = 'Letter ' + alphabetClass;
     	alphabet[alphaButtons].disabled = false;
     	alphaLetter.style.cursor = 'pointer';
     }
@@ -83,7 +83,7 @@ function blankPuzzle() {
 	  	for (let letter = 0; letter < words[word].length; letter++) {
 	 		let blank = document.createElement('img');
 	 		blank.src = 'assets/images/blank.webp';
-	 		blank.alt = 'Blank letter placeholder'
+	 		blank.alt = 'Blank letter placeholder';
 	 		blank.classList.add(words[word][letter].toLowerCase());
 	 		blank.classList.add('blank');
 	      puzzleWord.appendChild(blank);
@@ -160,7 +160,7 @@ function letterSelection(event) {
 		}
 /** Check if any blanks remain in the puzzle
  */
-		blankPresent = puzzleStage()
+		blankPresent = puzzleStage();
 		if (blankPresent === 0) {
 			setTimeout(() => {
 /** If none remain, the user won, switch to the Congratulations screen
