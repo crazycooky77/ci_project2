@@ -39,7 +39,7 @@ This site is for anyone who loves Hangman and Halloween! The game randomly selec
 
 ## Testing 
 1. Used Wave on each page and corrected missing alt tags where needed
-2. 
+2. Tested the site with Lighthouse and replaced all .png images with .webp
 
 ### Validator Testing 
 
@@ -52,10 +52,8 @@ All pages were checked using [the Jigsaw W3 Validator](https://jigsaw.w3.org/css
 <img src='...' alt='W3C Validator result'/>
 
 #### Lighthouse
-The website was checked using Lighthouse and...
-
-##### Index
-<img src='' alt='Lighthouse score results for ...'/>
+The website was checked using Lighthouse and 100 was scored in all areas.
+<img src='assets/images/readme-lighthouse.webp' alt='Lighthouse score results'/>
 
 
 #### Wave
