@@ -63,7 +63,7 @@ function blankPuzzle() {
     	let alphabetClass = alphabet[alphaButtons].classList[0];
     	let alphaLetter = document.getElementById('alphabet').getElementsByTagName('img')[alphaButtons];
     	alphaLetter.src = 'assets/images/' + alphabetClass + '.png';
-    	alphaLetter.alt = 'Unselected alphabet letter image'
+    	alphaLetter.alt = 'Letter ' + alphabetClass
     	alphabet[alphaButtons].disabled = false;
     	alphaLetter.style.cursor = 'pointer';
     }
@@ -126,6 +126,7 @@ function letterSelection(event) {
 	function clickActions() {
 		clickedButton.disabled = true;
 		let letterStrikethrough = clickedAlphabet[0].src = 'assets/images/' + clickedLetter + '-selected.png';
+		let letterStrikeAlt = clickedAlphabet[0].alt = 'Selected letter' + clickedLetter;
 		clickedAlphabet[0].style.cursor = 'default';
 	}
 
