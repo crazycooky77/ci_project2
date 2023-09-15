@@ -63,7 +63,7 @@ The website was checked using Lighthouse and...
 ## Deployment
 
 The site was deployed to GitHub Pages via the following steps:
-1. Created a new branch in [my own repository](https://github.com/crazycooky77/ci_projects) that already included the [Code Institute template](https://github.com/Code-Institute-Org/ci-full-template)]
+1. Created a new branch in [my own repository](https://github.com/crazycooky77/ci_projects) that already included the [Code Institute template](https://github.com/Code-Institute-Org/ci-full-template)
 2. Used GitHub Desktop for file updates and commits to the [hangman branch](https://github.com/crazycooky77/ci_projects/tree/hangman)
 3. Noted issues (see below) when trying to deploy to GitHub Pages
 4. Followed steps outlined below in Issues
