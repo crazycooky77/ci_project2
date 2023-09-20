@@ -39,13 +39,23 @@ This site is for anyone who loves Hangman and Halloween! The game randomly selec
 ## Testing 
 1. Used Wave on each page and corrected missing alt tags where needed
 2. Tested the site with Lighthouse and replaced all .png images with .webp
-3. Full site functionality was tested on a MacBook, iPad, iPhone, and Pixel 6
-	3a. New Game page and button
-	3b. Lost Game page and New Game button
-	3c. Won Game page and New Game button
-	3d. Puzzle Page with all alphabet letters and new/lost games
-4. HTML Checker identified an unclosed element > resolved
-5. W3C Validator identified no issues to resolve
+3. HTML Checker identified an unclosed element > resolved
+4. W3C Validator identified no issues to resolve
+5. JSHint noted some missing semicolons and unused variables > resolved
+6. No console errors were logged throughout testing
+7. Full site functionality was tested on a MacBook, iPad, iPhone, and Pixel 6 as below
+| Function | MacBook | iPad | iPhone | Pixel 6 | Comments |
+| -------- | ------- | ---- | ------ | ------- | -------- |
+| Loaded [main page](https://crazycooky77.github.io/ci_project2/) | &check;| &check; | &check; | &check; | Main page and background image load as expected |
+| Clicked New Game button from main page | &check;| &check; | &check; | &check; | New game loads as expected |
+| Clicked a letter not present in the puzzle | &check;| &check; | &check; | &check; | Selected letter gets X'd out, is disabled, mouse is back to default on hover, and hangman gets a limb added |
+| Clicked a letter present in the puzzle | &check;| &check; | &check; | &check; | Selected letter gets X'd out, is disabled, mouse is back to default on however, and relevant blank space in the puzzle is replaced with the letter |
+| Lost a game | &check;| &check; | &check; | &check; | Hangman shows final image after 7 wrong selections and loads the "game lost" page |
+| New Game button from lost game page | &check;| &check; | &check; | &check; | New game loads as expected with a new random puzzle |
+| Won a game | &check;| &check; | &check; | &check; | "Game won" page loads after puzzle is correctly completed before the hangman is completed |
+| New Game button from won game page | &check;| &check; | &check; | &check; | New game loads as expected with a new random puzzle |
+| Tested all alphabet letters | &check;| &check; | &check; | &check; | The letter is X'd out for each selection, the letter button is disabled, the mouse returns to default (instead of pointer), and the corresponding action is taken for the hangman or puzzle letter |
+| Tested clicks after a completed game before the won/lost game page loads | &check;| &check; | &check; | &check; | No interactions work after the end of the game, as expected |
 
 ### Validator Testing 
 
@@ -61,9 +71,12 @@ All pages were checked using [the Jigsaw W3 Validator](https://jigsaw.w3.org/css
 The website was checked using Lighthouse and 100 was scored in all areas.
 <img src='assets/images/readme-lighthouse.webp' alt='Lighthouse score results'>
 
-
 #### Wave
 Wave does not show show errors on any of the pages. It does display an alert for a possible heading, however the text is in paragraph tags, and stylistically, the font size is as expected.
+
+#### JSHint
+Some missing syntax (semicolons) and unused variables were noted. These issues were resolved. 2 variables are still listed as unused, however these are functions that are called in the index.html document.
+<img src='assets/images/readme-jshint.webp' alt='JSHint results'>
 
 ## Deployment
 
