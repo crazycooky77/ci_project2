@@ -43,7 +43,7 @@ This site is for anyone who loves Hangman and Halloween! The game randomly selec
 4. W3C Validator identified no issues to resolve
 5. JSHint noted some missing semicolons and unused variables > resolved
 6. No console errors were logged throughout testing
-7. Full site functionality was tested on a MacBook, iPad, iPhone, and Pixel 6 as below
+7. Full site functionality was tested on a MacBook, iPad, iPhone, and Pixel 6 as below\
 | Function | MacBook | iPad | iPhone | Pixel 6 | Comments |
 | -------- | ------- | ---- | ------ | ------- | -------- |
 | Loaded [main page](https://crazycooky77.github.io/ci_project2/) | &check;| &check; | &check; | &check; | Main page and background image load as expected |
