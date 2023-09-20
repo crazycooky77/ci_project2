@@ -142,9 +142,6 @@ h1 {
 /* For screens 1200px wide and less */
 @media screen and (max-width: 1200px) {
 /* Change size of text */
-	h2 {
-		font-size: 24px;
-	}
 
 	#new-game, #won-game, #lost-game {
 		font-size: 24px;
@@ -171,20 +168,16 @@ h1 {
 		font-size: 48px;
 	}
 
-	h2 {
-		font-size: 20px;
-	}
-
 	#new-game, #won-game, #lost-game {
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	.new {
-		font-size: 17px;
+		font-size: 15px;
 	}
 
 	#puzzle p {
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 /* Change the amount of letters per line for the alphabet */
