@@ -31,6 +31,11 @@ h1 {
 	margin-bottom: 50px;
 }
 
+h2 {
+	font-size: 28px;
+	text-align: center;
+}
+
 /* Hide all page sections except the first new game area for new users */
 #won-game {
 	display: none;
@@ -68,14 +73,8 @@ h1 {
 }
 
 /* Styling for H2s on new game pages */
-
 #won-game h2, #lost-game h2 {
 	margin-bottom: 20px;
-}
-
-#new-game h2 {
-	text-align: center;
-	font-size: 28px;
 }
 
 /* Styling for the puzzle area and instructions */
@@ -85,8 +84,6 @@ h1 {
 }
 
 #puzzle h2 {
-	text-align: center;
-	font-size: 28px;
 	margin: 0 50px 50px 50px;
 }
 
@@ -142,17 +139,16 @@ h1 {
 /* For screens 1200px wide and less */
 @media screen and (max-width: 1200px) {
 /* Change size of text */
-
-	#new-game, #won-game, #lost-game {
+	h2 {
 		font-size: 24px;
+	}
+
+	p {
+		font-size: 20px;
 	}
 
 	.new {
-		font-size: 21px;
-	}
-
-	#puzzle p {
-		font-size: 24px;
+		font-size: 20px;
 	}
 
 /* Change the amount of letters per line for the alphabet */
@@ -168,16 +164,16 @@ h1 {
 		font-size: 48px;
 	}
 
-	#new-game, #won-game, #lost-game {
-		font-size: 18px;
+	h2 {
+		font-size: 20px;
+	}
+
+	p {
+		font-size: 16px;
 	}
 
 	.new {
-		font-size: 15px;
-	}
-
-	#puzzle p {
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 /* Change the amount of letters per line for the alphabet */
