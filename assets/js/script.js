@@ -46,27 +46,27 @@ function blankPuzzle() {
 /** Remove all previous puzzle images to reset for the new blank puzzle
  */
 	let puzzleWordEle = document.getElementsByClassName('puzzle-word');
-    while (puzzleWordEle.length > 0) {
-        puzzleWordEle[0].parentNode.removeChild(puzzleWordEle[0]);
-    }
+	while (puzzleWordEle.length > 0) {
+		puzzleWordEle[0].parentNode.removeChild(puzzleWordEle[0]);
+	}
 
 /** Replace the hangman image with the blank/starting image
  */
-    let hangman = document.getElementById('hangman-image').getElementsByTagName('img')[0];
-    hangman.src = 'assets/images/hangman-1.webp';
-    hangman.alt = 'Hangman image showing how many wrong letters were selected';
+	let hangman = document.getElementById('hangman-image').getElementsByTagName('img')[0];
+	hangman.src = 'assets/images/hangman-1.webp';
+	hangman.alt = 'Hangman image showing how many wrong letters were selected';
 
 /** Replace the selected alphabet images, styling, and functions with blank alphabet defaults
  */
-    let alphabet = document.getElementById('alphabet').getElementsByTagName('button');
-    for (let alphaButtons = 0; alphaButtons < alphabet.length; alphaButtons++) {
-    	let alphabetClass = alphabet[alphaButtons].classList[0];
-    	let alphaLetter = document.getElementById('alphabet').getElementsByTagName('img')[alphaButtons];
-    	alphaLetter.src = 'assets/images/' + alphabetClass + '.webp';
-    	alphaLetter.alt = 'Letter ' + alphabetClass;
-    	alphabet[alphaButtons].disabled = false;
-    	alphaLetter.style.cursor = 'pointer';
-    }
+	let alphabet = document.getElementById('alphabet').getElementsByTagName('button');
+	for (let alphaButtons = 0; alphaButtons < alphabet.length; alphaButtons++) {
+		let alphabetClass = alphabet[alphaButtons].classList[0];
+		let alphaLetter = document.getElementById('alphabet').getElementsByTagName('img')[alphaButtons];
+		alphaLetter.src = 'assets/images/' + alphabetClass + '.webp';
+		alphaLetter.alt = 'Letter ' + alphabetClass;
+		alphabet[alphaButtons].disabled = false;
+		alphaLetter.style.cursor = 'pointer';
+	}
 
 /** Count the number of words in the movie name to create separate divs
  */
@@ -77,13 +77,13 @@ function blankPuzzle() {
 
 /** Count the number of letters in each word to create the blank images for each letter
  */
-	  	for (let letter = 0; letter < words[word].length; letter++) {
-	 		let blank = document.createElement('img');
-	 		blank.src = 'assets/images/blank.webp';
-	 		blank.alt = 'Blank letter placeholder';
-	 		blank.classList.add(words[word][letter].toLowerCase());
-	 		blank.classList.add('blank');
-	      puzzleWord.appendChild(blank);
+		for (let letter = 0; letter < words[word].length; letter++) {
+			let blank = document.createElement('img');
+			blank.src = 'assets/images/blank.webp';
+			blank.alt = 'Blank letter placeholder';
+			blank.classList.add(words[word][letter].toLowerCase());
+			blank.classList.add('blank');
+			puzzleWord.appendChild(blank);
 		}
 	}
 
@@ -107,10 +107,10 @@ function letterSelection(event) {
 	let clickedButton = document.getElementById('alphabet').getElementsByClassName(clickedLetter)[0];
 /** Get the letter image clicked in the alphabet
  */
-	let clickedAlphabet = document.getElementById('alphabet').getElementsByClassName(clickedLetter)[0].getElementsByTagName('img');	
+	let clickedAlphabet = document.getElementById('alphabet').getElementsByClassName(clickedLetter)[0].getElementsByTagName('img');
 /** Get the puzzle images
  */
-	let puzzleImages = document.getElementById('puzzle').getElementsByTagName('img');	
+	let puzzleImages = document.getElementById('puzzle').getElementsByTagName('img');
 /** Get the stage of the hangman image and set various variables
  */
 	let hangman = document.getElementById('hangman-image').getElementsByTagName('img');
@@ -153,7 +153,7 @@ function letterSelection(event) {
  */
 		for (let match = 0; match < blankMatch.length; match++) {
 			blankMatch[match].src = 'assets/images/' + clickedLetter + '.webp';
-			blankMatch[match].classList.remove('blank');			
+			blankMatch[match].classList.remove('blank');
 		}
 /** Check if any blanks remain in the puzzle
  */
