@@ -122,8 +122,8 @@ function letterSelection(event) {
  */
 	function clickActions() {
 		clickedButton.disabled = true;
-		let letterStrikethrough = clickedAlphabet[0].src = 'assets/images/' + clickedLetter + '-selected.webp';
-		let letterStrikeAlt = clickedAlphabet[0].alt = 'Selected letter ' + clickedLetter.toUpperCase();
+		clickedAlphabet[0].src = 'assets/images/' + clickedLetter + '-selected.webp';
+		clickedAlphabet[0].alt = 'Selected letter ' + clickedLetter.toUpperCase();
 		clickedAlphabet[0].style.cursor = 'default';
 	}
 
@@ -152,7 +152,7 @@ function letterSelection(event) {
 /** Replace all relevant blank puzzle letters with the selected alphabet letter
  */
 		for (let match = 0; match < blankMatch.length; match++) {
-			let replaceLetter = blankMatch[match].src = 'assets/images/' + clickedLetter + '.webp';
+			blankMatch[match].src = 'assets/images/' + clickedLetter + '.webp';
 			blankMatch[match].classList.remove('blank');			
 		}
 /** Check if any blanks remain in the puzzle
@@ -164,7 +164,7 @@ function letterSelection(event) {
  */
 				puzzleAreas.style.display = 'none';
 				wonGame.style.display = 'inherit';
-			}, 2000);
+			}, 1500);
 		}
 /** If the user clicks a letter that is not in the puzzle...
  */
@@ -174,7 +174,7 @@ function letterSelection(event) {
 		clickActions();
 /** Replace the hangman image for every wrong answer
  */
-		let hangmanHung = hangman[0].src = hangmanSrc + (hangmanNr + 1) + '.webp';
+		hangman[0].src = hangmanSrc + (hangmanNr + 1) + '.webp';
 /** If the user clicks a letter that is not in the puzzle and it's their last chance...
  */
 	} else if (blankMatch.length === 0 && hangmanNr === 7 && blankPresent > 0) {
@@ -183,10 +183,10 @@ function letterSelection(event) {
 		clickActions();
 /** Replace the hangman image for the wrong answer and switch to the Game Over screen
  */
-		let hangmanHung = hangman[0].src = hangmanSrc + (hangmanNr + 1) + '.webp';
+		hangman[0].src = hangmanSrc + (hangmanNr + 1) + '.webp';
 		setTimeout(() => {
 			puzzleAreas.style.display = 'none';
 			lostGame.style.display = 'inherit';
-		}, 2000);
+		}, 1500);
 	}
 }
