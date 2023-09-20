@@ -79,10 +79,6 @@ h1 {
 }
 
 /* Styling for the puzzle area and instructions */
-#puzzle {
-	width: 90%;
-}
-
 #puzzle img {
 	width: 5%;
 	margin-top: auto;
@@ -97,7 +93,7 @@ h1 {
 .puzzle-word {
 	display: flex;
 	justify-content: center;
-	gap: 20px;
+	gap: 10px;
 	margin-bottom: 50px;
 }
 
