@@ -79,6 +79,15 @@ h1 {
 }
 
 /* Styling for the puzzle area and instructions */
+#puzzle {
+	width: 90%;
+}
+
+#puzzle img {
+	width: 5%;
+	margin-top: auto;
+}
+
 #puzzle h2 {
 	text-align: center;
 	font-size: 28px;
@@ -90,11 +99,6 @@ h1 {
 	justify-content: center;
 	gap: 20px;
 	margin-bottom: 50px;
-}
-
-#puzzle img {
-	width: 5%;
-	margin-top: auto;
 }
 
 /* Hangman image and alphabet puzzle area */
